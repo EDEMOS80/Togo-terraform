@@ -1,5 +1,5 @@
 resource "aws_instance" "jenkins" {
-  ami                    = data.aws_ami.latest_ubuntu.id
+  ami                    = var.aws_ami
   instance_type          = var.instance_type
   key_name               = var.key_name
   vpc_security_group_ids = [data.aws_security_group.sg.id]

@@ -10,6 +10,9 @@ variable "root_volume" {
   type = number
 }
 
+variable "aws_ami" {
+  type = string
+}
 variable "resource_type" {
   type = string
 }
